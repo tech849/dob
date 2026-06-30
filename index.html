@@ -4,81 +4,11 @@
         <title>DOB</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-             /* Center the entire body layout on the page */
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-
-        .cal {
-            width: 320px; /* Fixed width so it can actually be centered */
-            padding: 30px;
-            background-color: gold;
-            border: 3px solid black;
-            border-radius: 20px 30px 10px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-            text-align: center;
-        }
-
-        input[type="text"] {
-            width: 90%;
-            height: 40px;
-            margin-bottom: 15px;
-            padding: 0 10px;
-            color: black;
-            font-size: 16px;
-            border-radius: 16px;
-            background: rgba(255, 255, 255, 0.4);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 1);
-            box-sizing: border-box;
-        }
-
-        #rbtn {
-            height: 40px;
-            color: black;
-            font-size: 16px;
-            width: 180px;
-            cursor: pointer;
-            background: rgba(255, 255, 255, 0.6);
-            border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 1);
-            font-weight: bold;
-        }
-
-        #throwdays {
-            margin-top: 20px;
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-        }
-        </style>
+        <link rel="stylesheet" href="/dob/dob.css">
     </head>
     <body>
-        <div class="cal">
-            <div style="color:black;font-size:20px;font-weight:bold;">Check your day of D.O.B</div><br>
-            <form>
-            <input type="text" placeholder="Enter Date" id="dt">
-            <input type="text" placeholder="Enter Month" id="mth">
-            <input type="text" placeholder="Enter Year" id="yr">
-            <input type="text" placeholder="Enter Century" id="cty">
-            <button type="button" onclick="calculateDay()" id="rbtn">GET RESULT</button>
-            </form>
-            <div id="throwdays"></div><br>
-            <div style="color:black;font-size:20px;font-weight:bold;">DEVELOPED BY: ARPITA DAS</div><br>
-        </div>
+       <div id="main"></div>
     </body>
+    <script src="/dob_main.js"></script>
     <script src="/dob/dob.js"></script>
 </html>
