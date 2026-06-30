@@ -1,0 +1,59 @@
+    /* Center the entire body layout on the page */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .cal {
+            width: 320px; /* Fixed width so it can actually be centered */
+            padding: 30px;
+            background-color: gold;
+            border: 3px solid black;
+            border-radius: 20px 30px 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            height: 40px;
+            margin-bottom: 15px;
+            padding: 0 10px;
+            color: black;
+            font-size: 16px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 1);
+            box-sizing: border-box;
+        }
+
+        #rbtn {
+            height: 40px;
+            color: black;
+            font-size: 16px;
+            width: 180px;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 1);
+            font-weight: bold;
+        }
+
+        #throwdays {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
