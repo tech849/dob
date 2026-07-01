@@ -3,7 +3,7 @@ document.getElementById("main").innerHTML=`<div class="cal">
             <form>
             <input type="text" placeholder="Enter Date" id="dt">
             <input type="text" placeholder="Enter Month" id="mth">
-            <input type="text" placeholder="Enter Year" id="yr">
+            <input type="text" placeholder="Enter Year(e.g. 06 or 6)" id="yr">
             <input type="text" placeholder="Enter Century" id="cty">
             <button type="button" onclick="calculateDay()" id="rbtn">GET RESULT</button>
             </form>
