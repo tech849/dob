@@ -4,7 +4,7 @@ function calculateDay(){
     var yr = parseInt(document.getElementById("yr").value) || 0;
     var cty = parseInt(document.getElementById("cty").value) || 0;
     var leap = Math.floor(yr/4);
-    if dt<=31 || dt!<=0{
+    if(dt<=31 || dt!<=0){
     if(cty === 2000){
         if(mth === 1){
             if(leap){
