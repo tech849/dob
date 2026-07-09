@@ -6,6 +6,7 @@ function calculateDay(){
     var leap = Math.floor(yr/4);
     if(dt<=31){
     if(cty === 2000){
+        if(mth<=12){
         if(mth === 1){
             if(leap){
                 var dayjan = (dt + 0 + 0 + yr + leap + 6) % 7;

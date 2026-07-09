@@ -1,10 +1,10 @@
 document.getElementById("main").innerHTML=`<div class="cal">
             <div style="color:black;font-size:20px;font-weight:bold;">Check your day of D.O.B</div><br>
             <form>
-            <input type="text" placeholder="Enter Date" id="dt">
-            <input type="text" placeholder="Enter Month" id="mth">
-            <input type="text" placeholder="Enter Year(e.g. 06 or 6)" id="yr">
-            <input type="text" placeholder="Enter Century" id="cty">
+            <input type="text" placeholder="Enter Date" id="dt" required>
+            <input type="text" placeholder="Enter Month" id="mth" required>
+            <input type="text" placeholder="Enter Year(e.g. 06 or 6)" id="yr" required>
+            <input type="text" placeholder="Enter Century" id="cty" required>
             <button type="button" onclick="calculateDay()" id="rbtn">GET RESULT</button>
             </form>
             <div id="throwdays"></div><br>
