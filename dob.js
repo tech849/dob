@@ -120,6 +120,7 @@ function calculateDay(){
     } else {
         document.getElementById("throwdays").innerHTML = "Only Century 2000 is supported in this check";
     }
+    }
     else{
         document.getElementById("throwdays").innerHTML = "Please enter a valid date";
     }
