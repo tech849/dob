@@ -7,7 +7,6 @@ function calculateDay(){
     if(dt<=31){
     if(cty === 2000){
         if(mth<=12){
-        if(mth === 1){
             if(leap){
                 var dayjan = (dt + 0 + 0 + yr + leap + 6) % 7;
                 document.getElementById("throwdays").innerHTML = "<img src='https://i.pinimg.com/originals/17/56/e8/1756e8c12e1ecaa39a1f4eacbadcf1e6.gif' style='width:150px;height:150px;'><br>Day" + dayjan;
