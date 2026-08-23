@@ -4,6 +4,14 @@ function calculateDay(){
     var yr = parseInt(document.getElementById("yr").value) || 0;
     var cty = parseInt(document.getElementById("cty").value) || 0;
     var leap = Math.floor(yr/4);
+    if(dt>31 || dt<1 || mth>12 || mth<1 || yr<2000 || yr>2999|| cty<2000 || cty>2000){
+        document.getElementById("throwdays").innerHTML = "<img src='https://media.tenor.com/w65WyoD8M7wAAAAM/error-angry.gif' style='width:150px;height:150px;'><br>Try again Fill Keyword Correctly";
+        document.getElementById("rbtn").innerHTML = "<button type='button' onclick='location.reload()' id='rbtn'>Try Again</button>";
+    }
+    else{
+        ad();
+    }
+    function ad(){
     if(dt<=31){
     if(cty === 2000){
         if(mth<=12){
@@ -124,4 +132,5 @@ function calculateDay(){
     else{
         document.getElementById("throwdays").innerHTML = "Please enter a valid date";
     }
+}
 }
