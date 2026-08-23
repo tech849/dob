@@ -1,5 +1,5 @@
 document.getElementById("main").innerHTML=`<div class="cal">
-            <div style="color:black;font-size:20px;font-weight:bold;">Check your day of D.O.B</div><br>
+            <div style="color:gold;font-size:20px;font-weight:bold;">Check your day of D.O.B</div><br>
             <form>
             <input type="text" placeholder="Enter Date" id="dt" required>
             <input type="text" placeholder="Enter Month" id="mth" required>
@@ -8,5 +8,5 @@ document.getElementById("main").innerHTML=`<div class="cal">
             <button type="button" onclick="calculateDay()" id="rbtn">GET RESULT</button>
             </form>
             <div id="throwdays"></div><br>
-            <div style="color:black;font-size:20px;font-weight:bold;">DEVELOPED BY: ARPITA DAS</div><br>
+            <div style="color:gold;font-size:20px;font-weight:bold;">DEVELOPED BY: ARPITA DAS</div><br>
         </div>`;
