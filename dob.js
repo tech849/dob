@@ -24,6 +24,7 @@ function calculateDay(){
             }
         } 
         else if(mth === 2){
+            if(dt<=29){
             if(leap){
                 var dayfeb = (dt + 3 + 0 + yr + leap + 6) % 7;
                 document.getElementById("throwdays").innerHTML = "<img src='https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUybnZsZzl1ZDRhbHhqajl0cWRqNDlxcmx6dmJkbmpjYThuYnpzeHUxOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/t6KdYRhVwKTcc/200w.gif' style='width:150px;height:150px;'><br>Day" + dayfeb;
@@ -31,6 +32,10 @@ function calculateDay(){
                 var dayfeb1 = (dt + 4 + 0 + yr + leap + 6) % 7;
                 document.getElementById("throwdays").innerHTML = "<img src='https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUybnZsZzl1ZDRhbHhqajl0cWRqNDlxcmx6dmJkbmpjYThuYnpzeHUxOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/t6KdYRhVwKTcc/200w.gif' style='width:150px;height:150px;'><br>Day" + dayfeb1;
             }
+        }
+        else{
+            document.getElementById("throwdays").innerHTML = "Please enter a valid date";
+        }
         } 
         else if(mth === 3){
             if(leap){
@@ -42,6 +47,7 @@ function calculateDay(){
             }
         } 
         else if(mth === 4){
+            if(dt<=30){
             if(leap){
                 var dayapr = (dt + 0 + 0 + yr + leap + 5) % 7;
                 document.getElementById("throwdays").innerHTML = "<img src='https://media.tenor.com/n_5WDTk9BvYAAAAM/april-fools.gif' style='width:150px;height:150px;'><br>Day" + dayapr;
@@ -49,8 +55,13 @@ function calculateDay(){
                 var dayapr1 = (dt + 0 + 0 + yr + leap + 5) % 7;
                 document.getElementById("throwdays").innerHTML = "<img src='https://media.tenor.com/n_5WDTk9BvYAAAAM/april-fools.gif' style='width:150px;height:150px;'><br>Day" + dayapr1;
             }
+        }
+        else{
+            document.getElementById("throwdays").innerHTML = "Please enter a valid date";
+        }
         } 
         else if(mth === 5){
+
             if(leap){
                 var daymay = (dt + 2 + 0 + yr + leap + 5) % 7;
                 document.getElementById("throwdays").innerHTML = "<img src='https://media.tenor.com/KfYF3hN9UfkAAAAM/oggy-and-the-cockroaches-oggy-and-jack-peeing.gif' style='width:150px;height:150px;'><br>Day" + daymay;
@@ -60,6 +71,7 @@ function calculateDay(){
             }
         } 
         else if(mth === 6){
+            if(dt<=30){
             if(leap){
                 var dayjun = (dt + 5 + 0 + yr + leap + 5) % 7;
                 document.getElementById("throwdays").innerHTML = "<img src='https://i.makeagif.com/media/8-29-2015/cHRAgx.gif' style='width:150px;height:150px;'><br>Day" + dayjun;
@@ -67,6 +79,10 @@ function calculateDay(){
                 var dayjun1 = (dt + 5 + 0 + yr + leap + 5) % 7;
                 document.getElementById("throwdays").innerHTML = "<img src='https://i.makeagif.com/media/8-29-2015/cHRAgx.gif' style='width:150px;height:150px;'><br>Day" + dayjun1;
             }
+        }
+        else{
+            document.getElementById("throwdays").innerHTML = "Please enter a valid date";
+        }
         } 
         else if(mth === 7){
             if(leap){
@@ -87,6 +103,7 @@ function calculateDay(){
             }
         } 
         else if(mth === 9){
+            if(dt<=30){
             if(leap){
                 var daysep = (dt + 6 + 0 + yr + leap + 5) % 7;
                 document.getElementById("throwdays").innerHTML = "<img src='https://i.pinimg.com/originals/af/1b/f7/af1bf75bd5cd04c5ab21dac1ca86cbaf.gif' style='width:150px;height:150px;'><br>Day" + daysep;
@@ -94,6 +111,10 @@ function calculateDay(){
                 var daysep1 = (dt + 6 + 0 + yr + leap + 5) % 7;
                 document.getElementById("throwdays").innerHTML = "<img src='https://i.pinimg.com/originals/af/1b/f7/af1bf75bd5cd04c5ab21dac1ca86cbaf.gif' style='width:150px;height:150px;'><br>Day" + daysep1;
             }
+        }
+        else{
+            document.getElementById("throwdays").innerHTML = "Please enter a valid date";
+        }
         } 
         else if(mth === 10){
             if(leap){
@@ -105,6 +126,7 @@ function calculateDay(){
             }
         } 
         else if(mth === 11){
+            if(dt<=30){
             if(leap){
                 var daynov = (dt + 4 + 0 + yr + leap + 6) % 7;
                 document.getElementById("throwdays").innerHTML = "<img src='https://i.pinimg.com/originals/5e/f8/7a/5ef87a0c6bf3c185c00cf88a36b16819.gif' style='width:150px;height:150px;'><br>Day" + daynov;
@@ -112,6 +134,10 @@ function calculateDay(){
                 var daynov1 = (dt + 4 + 0 + yr + leap + 6) % 7;
                 document.getElementById("throwdays").innerHTML = "<img src='https://i.pinimg.com/originals/5e/f8/7a/5ef87a0c6bf3c185c00cf88a36b16819.gif' style='width:150px;height:150px;'><br>Day" + daynov1;
             }
+        }
+        else{
+            document.getElementById("throwdays").innerHTML = "Please enter a valid date";
+        }
         } 
         else if(mth === 12){
             if(leap){
