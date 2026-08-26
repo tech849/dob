@@ -28,9 +28,12 @@ function calculateDay(){
             if(leap){
                 var dayfeb = (dt + 3 + 0 + yr + leap + 6) % 7;
                 document.getElementById("throwdays").innerHTML = "<img src='https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUybnZsZzl1ZDRhbHhqajl0cWRqNDlxcmx6dmJkbmpjYThuYnpzeHUxOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/t6KdYRhVwKTcc/200w.gif' style='width:150px;height:150px;'><br>Day" + dayfeb;
-            } else {
+            } else if(leap && dt<29){
                 var dayfeb1 = (dt + 4 + 0 + yr + leap + 6) % 7;
-                document.getElementById("throwdays").innerHTML = "<img src='https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUybnZsZzl1ZDRhbHhqajl0cWRqNDlxcmx6dmJkbmpjYThuYnpzeHUxOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/t6KdYRhVwKTcc/200w.gif' style='width:150px;height:150px;'><br>Day" + dayfeb1;
+                document.getElementById("throwdays").innerHTML ="<br><img src='https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUybnZsZzl1ZDRhbHhqajl0cWRqNDlxcmx6dmJkbmpjYThuYnpzeHUxOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/t6KdYRhVwKTcc/200w.gif' style='width:150px;height:150px;'><br>Day" + dayfeb1;
+            }
+            else{
+                 document.getElementById("throwdays").innerHTML = "Please enter a valid date";
             }
         }
         else{
